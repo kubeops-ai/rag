@@ -1,0 +1,8 @@
+# Local secrets
+.env
+.env.*
+
+# Python virtual environment and generated files
+.venv/
+__pycache__/
+*.py[cod]
