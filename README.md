@@ -113,6 +113,19 @@ The save step is incremental. It calculates a hash for each section:
 Section IDs are based on the heading path, so changing text inside one section
 does not require re-embedding unchanged sections.
 
+## Retrieval integration
+
+The retrieval entry point accepts a question from another application:
+
+```python
+from retrieval import retrieve_context
+
+context = retrieve_context(user_question)
+```
+
+KubeOps can pass its user question to this function. It returns the retrieved,
+reranked, and token-budgeted context.
+
 
 ## Future steps
 
